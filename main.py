@@ -13,4 +13,15 @@ item = {
 
 player = Player(input('Enter your name'), room['Canyon passage'])
 print(player.name)
-print(player.currentLocation)
+print(player.name, "you see the ", player.currentLocation)
+
+directions = ['n', 's', 'e', 'w']
+
+while True:
+    cmd = input('==> Enter direction, n, s. e, w, q')
+
+    if cmd in directions:
+        print(player.currentLocation)
+    elif cmd == 'q':
+        print("Goodbye")
+        break
