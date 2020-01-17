@@ -4,14 +4,13 @@ from item import Item
 
 
 room = {
-    'Canyon passage': 'Canyon passage' """You have high cliffs all around, you see a passage to the north."""
+    'Canyon passage': Room('Canyon passage', """You have high cliffs all around, you see a passage to the north."""),
 }
 
 item = {
-    'dagger': 'dagger' """basic dagger"""
+    'dagger': Item('dagger', """basic dagger"""),
 }
 
 player = Player(input('Enter your name'), room['Canyon passage'])
-print(player)
-dagger = Item
-room = Room
+print(player.name)
+print(player.currentLocation)

@@ -3,6 +3,8 @@ class Room:
         self.name = name
         self.description = description
 
+    def __str__(self):
+        return (F'{self.name}, {self.description}')
 
 
     # def roomName:
